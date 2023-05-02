@@ -38,7 +38,7 @@ class Shark {
       this.speed *= -1;
     }
 
-    // Check for collisions with other creatures
+    // Check for collisions with other sharks
     for (let i = 0; i < sharks.length; i++) {
       // Don't check for collision with self
       if (sharks[i] === this) continue;
@@ -136,7 +136,7 @@ function setup() {
 function draw() {
   background("royalblue");
   
-  // Check for collisions between creatures
+  // Check for collisions between sharks
   for (let i = 0; i < sharks.length; i++) {
     sharks[i].show();
 }
@@ -149,7 +149,7 @@ function draw() {
     fish[i].show();
   }
 
-// Check for collisions between creatures
+// Check for collisions between sharks
   for (let i = 0; i < sharks.length; i++) {
     sharks[i].update(sharks);
 }}
